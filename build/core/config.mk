@@ -14,7 +14,7 @@
 # limitations under the License.
 
 # Rules for QCOM targets
-include $(TOPDIR)vendor/acme/build/core/qcom_target.mk
+include $(TOPDIR)vendor/csc/build/core/qcom_target.mk
 
 # We modify several neverallows, so let the build proceed
 SELINUX_IGNORE_NEVERALLOWS := true

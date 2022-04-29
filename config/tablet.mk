@@ -5,4 +5,4 @@
 #
 
 # Inherit common Acme stuff
-$(call inherit-product, vendor/acme/config/common.mk)
+$(call inherit-product, vendor/csc/config/common.mk)

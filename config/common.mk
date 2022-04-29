@@ -5,11 +5,11 @@
 #
 
 # Inherit vendor submodules
-$(call inherit-product, vendor/acme/bootanimation/bootanimation.mk)
-$(call inherit-product, vendor/acme/overlay/overlay.mk)
+$(call inherit-product, vendor/csc/bootanimation/bootanimation.mk)
+$(call inherit-product, vendor/csc/overlay/overlay.mk)
 
 # Acme version
--include vendor/acme/config/version.mk
+-include vendor/csc/config/version.mk
 
 # Flatten APEXs for performance
 OVERRIDE_TARGET_FLATTEN_APEX := true
