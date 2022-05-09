@@ -11,6 +11,12 @@ $(call inherit-product, vendor/csc/overlay/overlay.mk)
 # Acme version
 -include vendor/csc/config/version.mk
 
+# GMS
+-include vendor/gms/config.mk
+
+# Sounds
+include vendor/csc/config/sounds.mk
+
 # Flatten APEXs for performance
 OVERRIDE_TARGET_FLATTEN_APEX := true
 
@@ -77,3 +83,7 @@ PRODUCT_PRODUCT_PROPERTIES += \
 # Enable support of one-handed mode
 PRODUCT_PRODUCT_PROPERTIES += \
     ro.support_one_handed_mode=true
+
+# Disable remote keyguard animation
+PRODUCT_SYSTEM_DEFAULT_PROPERTIES += \
+    persist.wm.enable_remote_keyguard_animation=0

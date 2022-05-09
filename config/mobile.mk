@@ -1,10 +1,10 @@
 #
-# Copyright (C) 2022 Acme
+# Copyright (C) 2022 Csc
 #
 # SPDX-License-Identifier: Apache-2.0
 #
 
-# Inherit common Acme stuff
+# Inherit common Csc stuff
 $(call inherit-product, vendor/csc/config/common.mk)
 
 # World APN list
